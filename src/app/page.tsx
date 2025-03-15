@@ -7,15 +7,28 @@ import { px } from "motion/react";
 export default function Home() {
   return (
   <div className="font-[family-name:var(--font-geist-sans)] ">
-    <nav className="absolute top-0 left-0 right-0 z-10 p-4 backdrop-blur-lg text-white col-span-3">
-        <div className="container mx-auto flex justify-center items-center">
-          <ul className="flex space-x-30">
-            <li><a href="#home" className="hover:text-gray-300">Home</a></li>
-            <li><a href="#about" className="hover:text-gray-300">Pricing</a></li>
-            <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
-          </ul>
-        </div>
-    </nav>
+<nav className="absolute top-0 left-0 right-0 z-10 p-4 backdrop-blur-lg text-white">
+  <div className="grid grid-cols-7 items-center justify-between w-full">
+    <Image
+      src="/Red's-Auto-Spa.png"
+      alt="Red's Auto Logo"
+      width={100}
+      height={50}  // Ensure height is automatically adjusted based on width
+      quality={100}
+      className=" col-span-1 flex w-auto max-w-full md:max-w-[270px] xl:max-w-[375px] object-contain"
+    />
+    {/* Centering the middle items */}
+    <div className="col-span-5 hidden md:flex justify-center space-x-30">
+      <a href="#home" className="hover:text-gray-300">Home</a>
+      <a href="#about" className="hover:text-gray-300">Pricing</a>
+      <a href="#contact" className="hover:text-gray-300">Contact</a>
+    </div>
+
+    <div className="col-start-7 col-span-1 flex justify-end">End</div>
+  </div>
+</nav>
+
+
   <div className="relative w-full h-screen grid grid-cols-8 md:grid-cols-8 grid-rows-7">
     <div className="col-start-3 col-span-4 md:col-start-2 md:col-span-2 xl:col-start-2 xl:col-span-2 row-start-2 md:row-start-2 md:row-span-2 flex justify-center items-center text-white z-2 mt-20">
       <Image
@@ -30,7 +43,10 @@ export default function Home() {
 
     <div className="col-start-3 col-span-4 m-3 md:col-start-5 md:col-span-3 md:mr-20 xl:mr-30 row-start-3 md:row-start-2 xl:mt-30 row-span-2 flex flex-col md:justify-start items-center md:items-end xl:text-xl text-white z-2 text-center md:text-right mt-30 md:mt-15">
       <p className="backdrop-blur-sm rounded-lg p-2 md:backdrop-blur-none md:p-0">Our expert detailing services ensure every inch of your vehicle looks and feels brand new, delivering unmatched care and lasting shine.</p>
-      <button className="rounded-3xl py-1 px-7 mt-3 bg-white text-black font-medium"> Book Now</button>
+      <div className="grid grid-cols-2 gap-4 mt-5">
+        <button className=" py-1 px-3 sm:px-7 bg-transparent border-1 border-white text-white font-medium hover:bg-white hover:text-black"> Contact Us </button>
+        <button className=" py-1 px-3 sm:px-7 bg-white border-1 border-white text-black font-medium hover:bg-transparent hover:text-white"> Book Now</button>
+      </div>
     </div>
 
 
