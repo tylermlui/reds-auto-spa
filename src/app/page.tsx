@@ -3,55 +3,13 @@ import Image from "next/image";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import { ClientReviews } from "../components/ui/client-reviews"
 import { Example } from "../components/ui/header"
-
+import { NavBar } from "../components/ui/nav-bar"
 import { px } from "motion/react";
 import { useState } from 'react'
 export default function Home() {
   return (
   <div className="font-[family-name:var(--font-geist-sans)] bg-black">
-    <nav className="bg-black/80 backdrop-blur-lg text-white p-4 sticky top-0 z-50">
-      <div className="container mx-auto flex items-center relative">
-        <Image
-          src="/Red's-Auto-Spa.png"
-          alt="Red's Auto Logo"
-          width={470}
-          height={200}
-          quality={100}
-          className="w-[200px] h-auto md:max-w-[150px] xl:max-w-[180px] object-contain"
-        />
-
-        <ul className="hidden absolute left-1/2 transform -translate-x-1/2 md:flex md:space-x-20 lg:space-x-30 text-xl">
-          <li>
-            <a className="group text-white transition-all duration-500 ease-in-out" href="#">
-              <span className="font-Rugen bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                About
-              </span>
-            </a>
-          </li>
-          <li>
-            <a className="group text-white transition-all duration-500 ease-in-out" href="#">
-              <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                Services
-              </span>
-            </a>
-          </li>
-          <li className="relative">
-            <a className="group text-white transition-all duration-500 ease-in-out" href="#">
-              <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                Contact
-              </span>
-            </a>
-
-          </li>
-        </ul>
-
-        <a href="#" className="ml-auto text-xl shadow-[0_4px_14px_0_rgb(255,255,255,39%)] hover:shadow-[0_6px_20px_rgba(255,255,255,23%)] hover:bg-[rgba(255, 255, 255, 0.9)] px-8 py-2 bg-[#ffffff] text-black transition duration-200 ease-linear">
-          Get a Quote
-        </a>
-      </div>
-    </nav>
-
-
+  <NavBar></NavBar>
   <div className="relative w-full h-screen grid grid-cols-8 md:grid-cols-8 grid-rows-7">
     <div className="col-start-3 col-span-4 md:col-start-2 md:col-span-3 xl:col-start-2 xl:col-span-2 row-start-2 md:row-start-2 md:row-span-2 flex justify-center items-center text-white z-2 mt-20">
       <Image
@@ -84,7 +42,7 @@ export default function Home() {
     
     <Image
       src="/porsche-mobile.jpg" // Image for mobile view
-      alt="Car"
+      alt="Car" 
       layout="fill"
       className="absolute inset-0 w-full h-full object-cover object-center md:hidden" // Hide on desktop
       sizes="100vw"
@@ -104,9 +62,37 @@ export default function Home() {
       <ClientReviews></ClientReviews>
       <Example></Example>
       <h1 className="p-10 text-5xl md:text-7xl font-bold text-center text-[#EEEEF0] bg-black rounded-t-4xl">Book here </h1>
+      <div className="rounded-t-4xl">
+        <img
+            alt=""
+            src="/p1.jpg"
+            className="absolute inset-0 size-full object-cover object-right md:object-center brightness-40 "
+          />
+  
+        <p className=" flex flex-row justify-center items-center font-bold text-7xl content-center z-20 pt-10"> Our Services</p>
+        <div className="grid grid-cols-2 m-20 text-2xl ">
+          <div className="space-y-4">
+            <div className="font-black text-5xl"> $90-$140 </div>
+            <div className="font-black text-4xl"> RED'S REFRESH DETAIL</div>
+            <div className="font-semibold text-xl"> Red’s Refresh Detail is the perfect solution for a quick, yet high-quality clean. We’ll wash, dry, and shine your vehicle inside and out, leaving it looking fresh in no time. Ideal for busy schedules, our refresh service ensures your car gets the care it deserves without the wait. <br></br> *Additional Fees for: Pet Hair, Sand, Heavy Staining </div>
+          </div>
 
-      <div className="flex w-full h-screen justify-center bg-black mt-10">
-        <iframe src="https://app.urable.com/virtual-shop/FLvSSjZiaC1E3G42Z5Eb" width="80%" className="h-3/4 rounded-lg"></iframe>
+
+          <ul className="text-xl space-y-3 font-semibold"> 
+            <li>- Exterior Spray Foamed</li>
+            <li>- Exterior Hand Wash and Rinse</li>
+            <li>- Tire and Wheel Cleaning</li>
+            <li>- Touchless Blow Dry (If Applicable) / Towel Dry</li>
+            <li>- All Glass Cleaned</li>
+            <li>- Interior Compressed Air Blowout</li>
+            <li>- Interior Vacuum (Seats, Floor Mats, High Visibility Spots)</li>
+            <li>- UV Protectant Dressing/Conditioner Applied to Plastics and Leather</li>
+            <li>- Tire Shined</li>
+            <li>- rqSpray Sealant on Paint for 1-3 Months of Protection</li>
+        </ul>
+
+        </div>
+
       </div>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

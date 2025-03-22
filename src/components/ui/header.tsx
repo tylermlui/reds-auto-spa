@@ -18,7 +18,7 @@ const links = [
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-250">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-100 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-100 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50 z-10"></div>
 
         {/* Image */}
         <img
