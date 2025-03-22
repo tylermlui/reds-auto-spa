@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import { ClientReviews } from "../components/ui/client-reviews"
+import { ServiceCard } from "../components/ui/service-card"
+
 import { Example } from "../components/ui/header"
 import { NavBar } from "../components/ui/nav-bar"
 import { px } from "motion/react";
@@ -61,39 +63,7 @@ export default function Home() {
 
       <ClientReviews></ClientReviews>
       <Example></Example>
-      <h1 className="p-10 text-5xl md:text-7xl font-bold text-center text-[#EEEEF0] bg-black rounded-t-4xl">Book here </h1>
-      <div className="rounded-t-4xl">
-        <img
-            alt=""
-            src="/p1.jpg"
-            className="absolute inset-0 size-full object-cover object-right md:object-center brightness-40 "
-          />
-  
-        <p className=" flex flex-row justify-center items-center font-bold text-7xl content-center z-20 pt-10"> Our Services</p>
-        <div className="grid grid-cols-2 m-20 text-2xl ">
-          <div className="space-y-4">
-            <div className="font-black text-5xl"> $90-$140 </div>
-            <div className="font-black text-4xl"> RED'S REFRESH DETAIL</div>
-            <div className="font-semibold text-xl"> Red’s Refresh Detail is the perfect solution for a quick, yet high-quality clean. We’ll wash, dry, and shine your vehicle inside and out, leaving it looking fresh in no time. Ideal for busy schedules, our refresh service ensures your car gets the care it deserves without the wait. <br></br> *Additional Fees for: Pet Hair, Sand, Heavy Staining </div>
-          </div>
-
-
-          <ul className="text-xl space-y-3 font-semibold"> 
-            <li>- Exterior Spray Foamed</li>
-            <li>- Exterior Hand Wash and Rinse</li>
-            <li>- Tire and Wheel Cleaning</li>
-            <li>- Touchless Blow Dry (If Applicable) / Towel Dry</li>
-            <li>- All Glass Cleaned</li>
-            <li>- Interior Compressed Air Blowout</li>
-            <li>- Interior Vacuum (Seats, Floor Mats, High Visibility Spots)</li>
-            <li>- UV Protectant Dressing/Conditioner Applied to Plastics and Leather</li>
-            <li>- Tire Shined</li>
-            <li>- rqSpray Sealant on Paint for 1-3 Months of Protection</li>
-        </ul>
-
-        </div>
-
-      </div>
+      <ServiceCard></ServiceCard>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
