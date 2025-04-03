@@ -5,7 +5,7 @@ export const ClientReviews = () => {
     return (
       
         <Marquee pauseOnHover gradient gradientColor="black" autoFill>
-          <div className="flex justify-center items-center bg-[black] p-10">
+          <div className="flex justify-center items-center bg-[black] py-20">
             <div className=" inset-shadow-sm inset-shadow-white rounded-[22px] max-w-sm max-h-64 min-h-64 md:max-h-80 min-h-80 p-10 sm:p-10 bg-black mx-auto relative overflow-hidden shadow-[0_0_10px_5px_rgba(255,255,255,0.5)] absolute inset-0 hover:shadow-[0_0_20px_5px_rgba(255,255,255,0.5)] transition-all duration-300 ease-in-out border-1">      
                 <p className="text-base sm:text-xl text-white mt-4 mb-2 dark:text-neutral-200">
                   Josh Colon
