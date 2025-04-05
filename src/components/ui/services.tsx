@@ -9,17 +9,18 @@ type ServiceCardProps = {
   additionalInfo?: string;
   features: string[];
   background?: string;
+  sectionid?: string;
 };
 
-export const ServiceCard = ({ header, title, price, description, additionalFees, additionalInfo, features, background }: ServiceCardProps) => {
+export const ServiceCard = ({ header, title, price, description, additionalFees, additionalInfo, features, background, sectionid }: ServiceCardProps) => {
   return (
-    <div className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: background ? `url(${background})` : 'none' }}>
+    <div className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: background ? `url(${background})` : 'none' }}id={sectionid}>
         <div className='bg-black/70 py-24 sm:py-32'>
             <div className="mx-auto max-w-7xl bg-black/ px-6 lg:px-8 p-6 rounded-lg ">
                 {/* Centered Title */}
                 {header && (
                 <div className="text-center">
-                    <h1 className="mt-2 text-6xl font-black tracking-tight text-white-900 sm:text-7xl">
+                    <h1 className="mt-2 text-6xl font-black tracking-tight text-white-900 sm:text-7xl" >
                     {header}
                     </h1>
                 </div>
@@ -31,16 +32,16 @@ export const ServiceCard = ({ header, title, price, description, additionalFees,
                             <p className="mt-2 text-4xl font-black tracking-tight text-white sm:text-5xl">
                                 {price}
                             </p>
-                            <p className="mt-2 text-4xl font-black tracking-tight text-white sm:text-4xl">
+                            <p className="mt-2 text-4xl font-black tracking-tight text-white sm:text-4xl ">
                                 {title}
                             </p>
-                            <p className="mt-6 text-lg text-gray-200">
+                            <p className="mt-6 text-lg text-gray-200 pl-3 border-l-2 border-slate-300">
                                 {description}
                             </p>
                             <p className="mt-6 text-lg font-semibold text-white">
                                 {additionalFees}
                             </p>
-                            <p className="mt-6 text-lg font-semibold text-white">
+                            <p className="mt-6 text-lg font-semibold text-white ">
                                 {additionalInfo}
                             </p>
                             <button className="hidden lg:block text-xl border-1 border-white shadow-[0_4px_14px_0_rgb(255,255,255,39%)] hover:shadow-[0_6px_20px_rgba(255,255,255,23%)] hover:bg-transparent px-8 py-3 bg-[#ffffff] hover:text-white hover:border-1  text-black transition duration-200 ease-linear"> 

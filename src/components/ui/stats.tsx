@@ -13,9 +13,9 @@ const links = [
     { name: 'Locations Served', value: '12' },
     { name: 'Attention to Detail', value: 'Unlimited' },
   ]
-  export const Example = () => {
+  export const Stats = () => {
     return (
-      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-250">
+      <div className="relative isolate bg-gray-900 py-24 sm:py-32 ">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-100 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50 z-10"></div>
@@ -42,7 +42,7 @@ const links = [
                 </a>
               ))}
             </div>
-            <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            <dl className="my-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.name} className="flex flex-col-reverse gap-1">
                   <dt className="text-base/7 text-gray-300">{stat.name}</dt>

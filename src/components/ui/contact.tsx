@@ -8,7 +8,7 @@ export const Contact = () => {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="isolate bg-black px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-black px-6 py-24 sm:py-32 lg:px-8" id='contact-section'>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-5xl font-black tracking-tight text-balance text-white sm:text-6xl">GET A QUOTE.</h2>
         <p className="mt-5 text-lg/8 text-gray-500">If our packages aren’t the perfect fit, contact us for a personalized quote.</p>
@@ -26,8 +26,8 @@ export const Contact = () => {
                         name="first-name"
                         type="text"
                         placeholder="John"
-                        className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
-                    />
+                        className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
+                        />
                 </div>
             </div>
           </div>
@@ -42,8 +42,8 @@ export const Contact = () => {
                             name="last-name"
                             type="text"
                             placeholder="Smith"
-                            className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
-                        />
+                            className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
+                            />
                 </div>
             </div>
           </div>
@@ -58,8 +58,8 @@ export const Contact = () => {
                             name="email"
                             type="text"
                             placeholder="example@email.com"
-                            className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
-                        />
+                            className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
+                            />
                 </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export const Contact = () => {
                   name="phone-number"
                   type="text"
                   placeholder="+1 (123)-456-7890"
-                  className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
+                  className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
                   />
               </div>
             </div>
@@ -90,7 +90,7 @@ export const Contact = () => {
                             name="car-make"
                             type="text"
                             placeholder="Honda"
-                            className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
+                            className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
                         />
                 </div>
             </div>
@@ -100,13 +100,13 @@ export const Contact = () => {
               Model
             </label>
             <div className="mt-2.5">
-                <div className="flex rounded-md bg-white outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-[#AA0606]">
+            <div className="flex rounded-md bg-white border border-gray-300 focus-within:border-[#AA0606] focus-within:ring-2 focus-within:ring-[#AA0606]">
                 <input
                     id="car-model"
                     name="car-model"
                     type="text"
                     placeholder="Civic"
-                    className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
+                    className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
                     />
                 </div>
             </div>
@@ -116,14 +116,14 @@ export const Contact = () => {
               Year
             </label>
             <div className="mt-2.5">
-              <div className="flex rounded-md bg-white outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-[#AA0606]">
-                    <input
-                        id="car-year"
-                        name="car-year"
-                        type="text"
-                        placeholder="2000"
-                        className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
-                    />
+              <div className="flex rounded-md bg-white border border-gray-300 focus-within:border-[#AA0606] focus-within:ring-2 focus-within:ring-[#AA0606]">
+                  <input
+                      id="car-year"
+                      name="car-year"
+                      type="text"
+                      placeholder="2000"
+                      className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
+                      />
               </div>
             </div>
           </div>
@@ -132,15 +132,15 @@ export const Contact = () => {
               Message
             </label>
             <div className="mt-2.5">
-                <div className="flex rounded-md bg-white outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-[#AA0606]">
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border border-white outline-none focus:ring-2 focus:ring-[#AA0606]"
-                        defaultValue={''}
-                    />
-                </div>
+              <div className="flex rounded-md bg-white border border-gray-300 focus-within:border-[#AA0606] focus-within:ring-2 focus-within:ring-[#AA0606]">
+                  <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      className="block w-full rounded-md bg-black px-3.5 py-2 text-base text-white border-none outline-none focus:ring-0"
+                      defaultValue={''}
+                  />
+              </div>
             </div>
           </div>
           <Field className="flex gap-x-4 sm:col-span-2">

@@ -1,11 +1,13 @@
 import Marquee from "react-fast-marquee";
 import { IconStarFilled } from "@tabler/icons-react";
 
-export const ClientReviews = () => {
+export const Reviews = () => {
     return (
-      
+      <div>
+        <h1 className="pb-20 pt-30 text-5xl md:text-6xl font-black text-center text-[#EEEEF0] bg-black rounded-t-4xl">OUR CLIENTS.</h1>
+
         <Marquee pauseOnHover gradient gradientColor="black" autoFill>
-          <div className="flex justify-center items-center bg-[black] py-20">
+          <div className="flex justify-center items-center bg-[black] ">
             <div className=" inset-shadow-sm inset-shadow-white rounded-[22px] max-w-sm max-h-64 min-h-64 md:max-h-80 min-h-80 p-10 sm:p-10 bg-black mx-auto relative overflow-hidden shadow-[0_0_10px_5px_rgba(255,255,255,0.5)] absolute inset-0 hover:shadow-[0_0_20px_5px_rgba(255,255,255,0.5)] transition-all duration-300 ease-in-out border-1">      
                 <p className="text-base sm:text-xl text-white mt-4 mb-2 dark:text-neutral-200">
                   Josh Colon
@@ -59,6 +61,7 @@ export const ClientReviews = () => {
             </div>
           </div>
         </Marquee>
+        </div>
     )
 }
 
