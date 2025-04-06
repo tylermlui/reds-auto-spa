@@ -7,6 +7,8 @@ import { Reviews } from "../components/ui/reviews";
 import { ServiceCard } from "../components/ui/services";
 import { Stats } from "../components/ui/stats";
 import { Location } from "../components/ui/location";
+import { Footer } from "../components/ui/footer";
+import { FAQ } from "../components/ui/faq";
 
 export default function Home() {
 
@@ -101,6 +103,8 @@ export default function Home() {
       <Stats/>
       <Contact/>
       <Location/>
+      <FAQ/>
+      <Footer/>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export const AddOns = ({background }: AddOnsProps) => {
         <div className='bg-black/70 py-24 sm:py-32'>
             <div className="mx-auto max-w-7xl px-6 lg:px-8 p-6 rounded-lg ">
                 <div className="text-center">
-                    <h1 className="mt-2 text-6xl font-black tracking-tight text-white-900 sm:text-6xl">
+                    <h1 className="mt-2 text-5xl font-black tracking-tight text-white-900 sm:text-6xl">
                     ADD-ONS
                     </h1>
                 </div>

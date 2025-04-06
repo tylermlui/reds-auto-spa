@@ -1,10 +1,4 @@
-const links = [
 
-
-    { name: 'Exterior Detailing', href: '#' },
-    { name: 'Interior Detailing', href: '#' },
-    { name: 'Ceramic Coating', href: '#' },
-  ]
   const stats = [
   
   
@@ -15,7 +9,7 @@ const links = [
   ]
   export const Stats = () => {
     return (
-      <div className="relative isolate bg-gray-900 py-24 sm:py-32 ">
+      <div className="relative isolate bg-gray-900 py-24 sm:py-32 " id="about-section">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-100 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50 z-10"></div>
@@ -36,11 +30,6 @@ const links = [
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-              {links.map((link) => (
-                <a key={link.name} href={link.href}>
-                  {link.name} <span aria-hidden="true">&rarr;</span>
-                </a>
-              ))}
             </div>
             <dl className="my-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
