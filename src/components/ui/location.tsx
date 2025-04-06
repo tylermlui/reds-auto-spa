@@ -1,10 +1,9 @@
+'use client'
 export const Location = () => {
-      const apiKey = "AIzaSyAD_Rqqj57mXsWoH6Qscd-fxuyg5eI36K0"; // Ensure you have your API key in .env.local
+      const apiKey =  process.env.NEXT_PUBLIC_GOOGLE_API_KEY
       const mapMode = "roadmap"; // Change this to "satellite", "terrain", etc.
       const zoom = 8; // Adjust the zoom level
-    
-      const src = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Ventura+County&zoom=${zoom}&maptype=${mapMode}`;
-    return (
+return (
     <div className="md:bg-[url('/serjan-midili-zF3fWCA5OLo-unsplash.jpg')] md:mt-15">
         <div className="bg-black/70">
             <div className=" mx-auto max-w-7xl py-0 sm:px-6 lg:px-8 pt-20 md:pb-30">
@@ -36,7 +35,7 @@ export const Location = () => {
                                 frameBorder="0"
                                 style={{ border: 0 }}
                                 referrerPolicy="no-referrer-when-downgrade"
-                                src={src}
+                                src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Ventura+County&zoom=${zoom}&maptype=${mapMode}`}
                                 allowFullScreen
                                 />
                         </div>
