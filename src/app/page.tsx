@@ -6,8 +6,11 @@ import { Navbar } from "../components/ui/navbar";
 import { Reviews } from "../components/ui/reviews";
 import { ServiceCard } from "../components/ui/services";
 import { Stats } from "../components/ui/stats";
+import { Location } from "../components/ui/location";
 
 export default function Home() {
+
+
   return (
     <div className="font-[family-name:var(--font-geist-sans)] bg-black">
       <Navbar/>
@@ -97,7 +100,7 @@ export default function Home() {
       <Reviews/>
       <Stats/>
       <Contact/>
-
+      <Location/>
     </div>
   );
 }
