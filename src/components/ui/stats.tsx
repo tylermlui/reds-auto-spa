@@ -1,3 +1,4 @@
+import { ScrollFadeIn } from './scrollfade';
 
   const stats = [
   
@@ -24,10 +25,16 @@
         {/* Content */}
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 pt-30">
           <div className="mx-auto max-w-2xl lg:mx-0">
+            <ScrollFadeIn direction='up'>
             <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-6xl">DRIVEN BY DETAILS.</h2>
+            </ScrollFadeIn>
+            <ScrollFadeIn direction='right'>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-            Our car detailing service enhances every detail, from deep interior cleaning to a flawless exterior shine. Whether it's a quick wash or a full detailing, we ensure your car looks like new with meticulous care.            </p>
+            Our car detailing service enhances every detail, from deep interior cleaning to a flawless exterior shine. Whether it's a quick wash or a full detailing, we ensure your car looks like new with meticulous care.
+            </p>
+            </ScrollFadeIn>
           </div>
+          <ScrollFadeIn direction='down'>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             </div>
@@ -40,6 +47,7 @@
               ))}
             </dl>
           </div>
+          </ScrollFadeIn>
         </div>
       </div>
     )

@@ -3,16 +3,20 @@
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { Field, Label, Switch } from '@headlessui/react'
+import { ScrollFadeIn } from "./scrollfade";
 
 export const Contact = () => {
   const [agreed, setAgreed] = useState(false)
 
   return (
     <div className="isolate bg-black px-6 py-24 sm:py-32 lg:px-8" id='contact-section'>
+      <ScrollFadeIn direction='up'>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-5xl font-black tracking-tight text-balance text-white sm:text-6xl">GET A QUOTE.</h2>
         <p className="mt-5 text-lg/8 text-gray-500">If our packages aren’t the perfect fit, contact us for a personalized quote.</p>
       </div>
+      </ScrollFadeIn>
+      <ScrollFadeIn direction='right'>
       <form action="https://formsubmit.co/3f8dad42ccdc97a4feb8bb8b7f7bed97" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-15">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -174,6 +178,7 @@ export const Contact = () => {
 
 
         </div>
+        
         <div className="mt-10">
           <button
             type="submit"
@@ -182,6 +187,7 @@ export const Contact = () => {
           </button>
         </div>
       </form>
+      </ScrollFadeIn>
     </div>
   )
 }

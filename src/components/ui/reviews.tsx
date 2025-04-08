@@ -1,12 +1,14 @@
 import Marquee from "react-fast-marquee";
 import { IconStarFilled } from "@tabler/icons-react";
+import { ScrollFadeIn } from './scrollfade';
 
 export const Reviews = () => {
     return (
       <div>
       <div className="p-5 ">
+        <ScrollFadeIn direction='up'>
         <h1 className="pb-16 pt-30 text-5xl md:text-6xl font-black text-center text-[#EEEEF0] bg-black rounded-t-4xl">OUR CLIENTS.</h1>
-        
+        </ScrollFadeIn>
         <div className="flex justify-center items-center bg-black mt-15 md:hidden">
             <div className="rounded-[22px] max-w-sm max-h-80 min-h-80 p-4 sm:p-10 bg-black mx-auto relative overflow-hidden shadow-[0_0_10px_5px_rgba(255,255,255,0.5)] absolute inset-0 hover:shadow-[0_0_20px_5px_rgba(255,255,255,0.5)] transition-all duration-300 ease-in-out border-1">      
               <p className="text-base text-xl text-white mt-4 mb-2 dark:text-neutral-200">

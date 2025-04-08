@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { scrollToSection } from "../../../lib/utils";
-
+import { ScrollFadeIn } from "./scrollfade";
 const faqs = [
     {
       id: 1,
@@ -57,13 +57,14 @@ export const FAQ = () => {
   return (
     <section className="md:pt-50 pb-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <ScrollFadeIn direction='up'>
         <div className="mb-16 text-center">
           <h6 className="text-lg text-[#AA0606] font-medium mb-2">FAQs</h6>
           <h2 className="text-4xl md:text-5xl font-manrope font-black text-white leading-[3.25rem]">
             FREQUENTLY ASKED QUESTIONS.
           </h2>
         </div>
-
+      </ScrollFadeIn>
         <div className="accordion-group">
           {faqs.map(({ id, question, answer }) => (
             <div

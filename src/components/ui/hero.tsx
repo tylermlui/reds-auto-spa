@@ -1,19 +1,27 @@
 import { scrollToSection } from "../../../lib/utils";
+import { ScrollFadeIn } from './scrollfade';
+
 export const Hero = () => {
     return (
       <div className="relative w-full h-screen grid grid-cols-8 md:grid-cols-8 grid-rows-7" id="home-section">
+        
         <div className="col-start-2 col-span-6 md:col-start-2 md:col-span-3 xl:col-start-2 xl:col-span-2 row-start-2 md:row-start-2 md:row-span-2 flex justify-center items-center text-white z-2 mt-0">
+          <ScrollFadeIn direction='up'>
           <img
             src="/Red's-Auto-Spa-2.png"
             alt="Red's Auto Logo"
             className="w-full max-w-[300px] md:max-w-none md:w-[270px] md:h-[375px] xl:w-[375px] object-contain"
           />
+          </ScrollFadeIn>
         </div>
-  
+        
         <div className="col-start-2 col-span-6 m-3 md:col-start-5 md:col-span-3 lg:col-start-5 lg:col-span-3 md:mr-20 xl:mr-30 row-start-3 md:row-start-2 xl:mt-10 row-span-2 flex flex-col md:justify-start items-center md:items-end xl:text-xl text-white z-2 text-center md:text-right mt-15 md:mt-15">
+          <ScrollFadeIn direction='right'>
           <p className="p-2 md:backdrop-blur-none md:p-0 text-lg lg:text-2xl 3xl:text-4xl font-medium md:font-light">
             Our expert detailing services ensure every inch of your vehicle looks and feels brand new, delivering unmatched care and lasting shine.
           </p>
+          </ScrollFadeIn>
+          <ScrollFadeIn direction='down'>
           <div className="grid grid-cols-2 gap-2 md:gap-4 mt-10">
             <button
               onClick={() => scrollToSection("contact-section")}
@@ -28,6 +36,7 @@ export const Hero = () => {
               Book Now
             </button>
           </div>
+          </ScrollFadeIn>
         </div>
   
         {/* Desktop background image */}

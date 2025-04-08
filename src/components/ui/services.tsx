@@ -17,19 +17,21 @@ export const ServiceCard = ({ header, title, price, description, additionalFees,
   return (
     <div className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: background ? `url(${background})` : 'none' }}id={sectionid}>
         <div className='bg-black/70 py-24 sm:py-32'>
-            <ScrollFadeIn>
             <div className="mx-auto max-w-7xl bg-black/ px-6 lg:px-8 p-6 rounded-lg ">
                 {/* Centered Title */}
                 {header && (
                 <div className="text-center">
+                    <ScrollFadeIn direction='up'>
                     <h1 className="mt-2 text-6xl font-black tracking-tight text-white-900 sm:text-7xl" >
                     {header}
                     </h1>
+                    </ScrollFadeIn>
                 </div>
                 )}
 
                 <div className={`mx-auto grid max-w-2xl grid-cols-1 ${header ? 'pt-24' : 'pt-0'} gap-x-8 gap-y-2 lg:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2`}>
                     <div className="lg:pr-8">
+                        <ScrollFadeIn direction='left'>
                         <div className="lg:max-w-lg space-y-8">
                             <p className="mt-2 text-4xl font-black tracking-tight text-white sm:text-5xl">
                                 {price}
@@ -50,9 +52,11 @@ export const ServiceCard = ({ header, title, price, description, additionalFees,
                                 Book Now
                             </button>
                         </div>
+                        </ScrollFadeIn>
                     </div>
 
                     <div className="lg:pr-8 flex items-center">
+                        <ScrollFadeIn direction='right'>
                         <div className="lg:max-w-lg">
                             <ul className="max-w-xl space-y-4 text-base text-gray-300 lg:max-w-none list-none">
                                 {features.map((text) => (
@@ -68,10 +72,10 @@ export const ServiceCard = ({ header, title, price, description, additionalFees,
                                 </button>
                             </div>
                         </div>
+                        </ScrollFadeIn>
                     </div>
                 </div>
-            </div> 
-            </ScrollFadeIn>   
+            </div>    
         </div>
         
     </div>
