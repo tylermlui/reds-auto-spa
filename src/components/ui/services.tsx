@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { ScrollFadeIn } from './scrollfade';
 
 type ServiceCardProps = {
   header?: string;
@@ -16,6 +17,7 @@ export const ServiceCard = ({ header, title, price, description, additionalFees,
   return (
     <div className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: background ? `url(${background})` : 'none' }}id={sectionid}>
         <div className='bg-black/70 py-24 sm:py-32'>
+            <ScrollFadeIn>
             <div className="mx-auto max-w-7xl bg-black/ px-6 lg:px-8 p-6 rounded-lg ">
                 {/* Centered Title */}
                 {header && (
@@ -68,8 +70,10 @@ export const ServiceCard = ({ header, title, price, description, additionalFees,
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div> 
+            </ScrollFadeIn>   
         </div>
+        
     </div>
   )
 }

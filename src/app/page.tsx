@@ -9,7 +9,7 @@ import { Stats } from "../components/ui/stats";
 import { Location } from "../components/ui/location";
 import { Footer } from "../components/ui/footer";
 import { FAQ } from "../components/ui/faq";
-
+import { ScrollFadeIn } from "../components/ui/scrollfade"
 export default function Home() {
 
 

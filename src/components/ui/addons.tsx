@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { ScrollFadeIn } from './scrollfade';
 
 type AddOnsProps = {
   background?: string;
@@ -8,6 +9,7 @@ export const AddOns = ({background }: AddOnsProps) => {
   return (
     <div className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: background ? `url(${background})` : 'none' }}>
         <div className='bg-black/70 py-24 sm:py-32'>
+            <ScrollFadeIn>
             <div className="mx-auto max-w-7xl px-6 lg:px-8 p-6 rounded-lg ">
                 <div className="text-center">
                     <h1 className="mt-2 text-5xl font-black tracking-tight text-white-900 sm:text-6xl">
@@ -43,6 +45,7 @@ export const AddOns = ({background }: AddOnsProps) => {
                     </div>
                 </div>
             </div>    
+            </ScrollFadeIn>
         </div>
     </div>
   )

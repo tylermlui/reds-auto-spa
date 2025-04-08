@@ -6,7 +6,7 @@ export const Footer = () => {
                 <div className="mb-6 md:mb-0">
                     <img src="Red's-Auto-Spa.png" className="mr-3 h-30" alt="Red's Auto Spa Logo" />
                 </div>
-                <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 py-7">
 
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
